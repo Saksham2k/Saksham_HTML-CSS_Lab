@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bar Graph</title>
+        <style>
+            #bar-graph{
+                background-color: whitesmoke;
+                position: absolute;
+                top:10%;
+                left: 40%;
+            }
+
+            #bar-graph>div>div{
+                width: 40px;
+                height: 300px;
+                background-color:rgb(202, 198, 192);
+                margin: 20px;
+            }
+
+            section>div{
+                display: inline-block;
+            }
+
+            p{
+                padding-left: 25px;
+            }
+
+            #bar1{
+                width: 100%;
+                height: 70%;
+                background-color: white;
+                animation-name: barplotting1;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes barplotting1{
+                0%{height: 100%; background-color: white;}
+                100%{height:70%; background-color: white;}
+            }
+
+            #bar2{
+                width: 100%;
+                height: 60%;
+                background-color: white;
+                animation-name: barplotting2;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes barplotting2{
+                0%{height: 100%; background-color: white;}
+                100%{height:60%; background-color: white;}
+            }
+
+            #bar3{
+                width: 100%;
+                height: 20%;
+                background-color: white;
+                animation-name: barplotting3;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes barplotting3{
+                0%{height: 100%; background-color: white;}
+                100%{height:20%; background-color: white;}
+            }
+        </style>
+    </head>
+    <body>
+        <section id="bar-graph">
+            <div>
+                <div>
+                    <div id="bar1"></div>
+                </div>
+                <p>30%</p>
+            </div>
+            <div>
+                <div>
+                    <div id="bar2"></div>
+                </div>
+                <p>40%</p>
+            </div>
+            <div>
+                <div>
+                    <div id="bar3"></div>
+                </div>
+                <p>80%</p>
+            </div>
+            <h3 style="text-align: center;">Bar Plot</h3>
+
+        </section>
+    </body>
+</html>
